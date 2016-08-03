@@ -1,59 +1,97 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-/*
-nav ul a,
-nav .brand-logo {
-  color: #444;
-}
-*/
-
-p {
-  line-height: 2rem;
+body{
+  background-color: #FAFAFA;
 }
 
-.button-collapse {
-  color: #26a69a;
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
 }
 
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
+.header{
+  display: block;
+  height: 300px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+  background: rgba(63,81,181,1);
+  background: -moz-linear-gradient(-45deg, rgba(63,81,181,1) 30%, rgba(36,127,194,1) 60%, rgba(0,188,212,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(30%, rgba(63,81,181,1)), color-stop(60%, rgba(36,127,194,1)), color-stop(100%, rgba(0,188,212,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(63,81,181,1) 30%, rgba(36,127,194,1) 60%, rgba(0,188,212,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(63,81,181,1) 30%, rgba(36,127,194,1) 60%, rgba(0,188,212,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(63,81,181,1) 30%, rgba(36,127,194,1) 60%, rgba(0,188,212,1) 100%);
+  background: linear-gradient(135deg, rgba(63,81,181,1) 30%, rgba(36,127,194,1) 60%, rgba(0,188,212,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f51b5', endColorstr='#00bcd4', GradientType=1 );
+
 }
 
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
+.header-headline {
+  padding-top: 50px;
+  font-size: 32px;
 }
 
-footer.page-footer {
+.topnav{
+  display: block;
+  font-weight: 700;
+  /*background-color: #283593;*/
+  /* box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21); */
+}
+
+.topnav > .container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.topnav-links {
+  float: left;
+  list-style: none;
   margin: 0;
+  padding-left: 0px;
+}
+.topnav-links > li {
+  postion: relative;
+  float: left;
+  display: block;
+  padding: 15px;
+}
+
+.topnav-links > li > a {
+  color: #fff;
+}
+
+
+.topnav-links > .active {
+  /*
+  -webkit-box-shadow: inset 0 1px 9px rgba(0, 0, 0, .21);
+          box-shadow: inset 0 1px 9px rgba(0, 0, 0, .21);
+  */
+}
+
+.topnav-links > .active > a {
+  color: #00BCD4;
+}
+
+.content-container{
+  padding: 60px 15px;
+  margin-top: -60px;
+  color: #212121;
+  background-color: #fff;
+  height: 1000px; /* this is temp until I add content */
+  box-shadow:  0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+
+.footer {
+  display: block;
+  height: 50px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+
+  background-color: #3F51B5;
+
 }
