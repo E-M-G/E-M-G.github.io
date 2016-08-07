@@ -86,10 +86,11 @@ h1 {
   position: absolute;
   width: 100%;
   text-align: center;
-  line-height: 800px;
+  line-height: 690px;
 }
 
 .header-image {
+  max-width: 250px;  
   position: relative;
   z-index: -1;
 }
@@ -181,7 +182,7 @@ h1 {
 }
 
 #particles-js {
-  height: 600px;
+  height: 500px;
   position: relative;
   z-index: -2;
   background: rgba(63,81,181,1);
