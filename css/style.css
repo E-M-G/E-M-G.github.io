@@ -163,6 +163,7 @@ h1 {
 
 
 .footer {
+  margin-top: -7px;
   display: block;
   height: 50px;
   line-height: 50px;
