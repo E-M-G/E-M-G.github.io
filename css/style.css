@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,300);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700);
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
 
 body{
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -15,8 +16,14 @@ a:active {
 }
 
 h1 {
-  font-size: 42px;
-  font-weight: 300;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  /*text-transform: uppercase;*/
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .text-cyan {
@@ -36,7 +43,7 @@ h1 {
 }
 
 .text-blue {
-  color: #2B75D4;
+  color: #5FA1FF;
 }
 
 .bg-teal {
@@ -88,11 +95,16 @@ h1 {
 .header-headline {
   font-size: 42px;
   color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .header-subtitle {
   margin: 0px;
   font-size: 18px;
+  font-weight: 400;
+  color: #AFD0FF;
 }
 
 .header-image-wrapper {
@@ -200,12 +212,14 @@ h1 {
 
 
 .btn-main {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
   color: #fff;
   background-color: #5F54AF;
-  border-radius: 5px;
+  border-radius: 50px;
   border-width: 0px;
-  padding: 10px 20px;
-  font-size: 24px;
+  padding: 15px 30px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
