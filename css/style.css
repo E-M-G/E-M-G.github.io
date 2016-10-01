@@ -174,7 +174,7 @@ h1 {
   color: #63666A;
   background-color: #fff;
   /*box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
-  /*border-radius: 2px;*/
+  border-radius: 2px;
   padding-bottom: 60px;
 }
 
@@ -191,7 +191,6 @@ h1 {
   color: #fff;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-
   /*margin-top: 20px;*/
 
   /*
