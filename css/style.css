@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,300);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700);
-@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100, 300');
 
 body{
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -17,11 +18,12 @@ a:active {
 
 h1 {
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 100;
   /*
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   */
+  font-family: 'Roboto', sans-serif;
 }
 
 .uppercase {
@@ -45,7 +47,8 @@ h1 {
 }
 
 .text-blue {
-  color: #5FA1FF;
+  /* color: #5FA1FF; */
+  color: #348CFF;
 }
 
 .bg-teal {
@@ -90,7 +93,7 @@ h1 {
   */
 
   background: linear-gradient(135deg, #33295F /*#281F4C*/ 0%, #5254A7 69%, #5E54AF 100%);
-
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.24);
   /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
 }
 
@@ -105,7 +108,8 @@ h1 {
 .header-subtitle {
   margin: 0px;
   font-size: 18px;
-  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
   color: #AFD0FF;
 }
 
@@ -198,7 +202,8 @@ h1 {
   line-height: 120px;
   color: #fff;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
   /*margin-top: 20px;*/
 
   /*
@@ -224,26 +229,32 @@ h1 {
   font-size: 18px;
   letter-spacing: 2px;
   color: #fff;
-  background-color: #5F54AF;
-  border-radius: 50px;
+  background-color: #fff;
+  color: #348CFF;
+  border: 2px solid #348CFF !important;
+  border-radius: 5px;
   border-width: 0px;
   padding: 15px 30px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .btn-main:hover {
+  color: #FFF;
+  background-color: #348CFF;
+  /* 
   background-color: #7267CF;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
+  */
+  box-shadow: 0 2px 2px rgba(0,0,0,0.24),0 0 2px rgba(0,0,0,0.12);
 }
 
 
 
 .card {
-  /* box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21); */
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.21);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  border-radius: 2px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.24),0 0 2px rgba(0,0,0,0.12);
+  transition: box-shadow .5s;  
+  border-radius: 4px;
   /* margin: 5px; */
   margin-bottom: 28px;
   font-size: 16px;
@@ -251,7 +262,7 @@ h1 {
 }
 
 .card:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.22), 0 10px 10px rgba(0,0,0,0.21);
+  box-shadow:0 8px 8px rgba(0,0,0,0.24),0 0 8px rgba(0,0,0,0.12);
 }
 
 .card-title{
@@ -261,9 +272,6 @@ h1 {
   margin-bottom: 10px;
   /* background-color: #6664B2; */
   border-radius: 2px 2px 0px 0px;
-  color: #44377F;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
   border-bottom: 1px solid #EEE;
 }
