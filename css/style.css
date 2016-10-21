@@ -185,8 +185,8 @@ h1 {
   font-size: 1.5em;
   letter-spacing: 0.7px;
   color: #77758D;
-  background-color: #fff;
-  /*box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
+  background-color: rgb(250, 250, 255);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   border-radius: 2px;
   padding-bottom: 60px;
 }
@@ -243,9 +243,9 @@ h1 {
 .btn-main:hover {
   color: #FFF;
   background-color: #348CFF;
-  /* 
+  /*
   background-color: #7267CF;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   */
   box-shadow: 0 2px 2px rgba(0,0,0,0.24),0 0 2px rgba(0,0,0,0.12);
 }
@@ -254,9 +254,12 @@ h1 {
 
 .card {
   box-shadow: 0 2px 2px rgba(0,0,0,0.24),0 0 2px rgba(0,0,0,0.12);
-  transition: box-shadow .5s;  
+  transition: box-shadow .5s;
+  /*
   border-radius: 4px;
-  /* margin: 5px; */
+  margin: 5px;
+  */
+  background-color: #FFF;
   margin-bottom: 28px;
   font-size: 16px;
   min-height: 400px;
