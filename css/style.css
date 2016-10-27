@@ -269,6 +269,38 @@ h1 {
   box-shadow:0 8px 8px rgba(0,0,0,0.24),0 0 8px rgba(0,0,0,0.12);
 }
 
+
+.card_skill {
+  box-shadow: 0 2px 2px rgba(0,0,0,0.24),0 0 2px rgba(0,0,0,0.12);
+  transition: box-shadow .5s;
+  /*
+  border-radius: 4px;
+  margin: 5px;
+  */
+  padding: 15px 0;
+  text-align: center;
+  background-color: #FFF;
+  margin-bottom: 28px;
+  font-size: 16px;
+  min-height: 220px;
+}
+
+.card_skill > i {
+  font-size:60px;
+  color: #5754AA;
+}
+
+
+.card_skill:hover {
+  box-shadow:0 8px 8px rgba(0,0,0,0.24),0 0 8px rgba(0,0,0,0.12);
+  background-color:  #5754AA;
+  color: #fff;
+}
+
+.card_skill:hover > i {
+  color: #fff;
+}
+
 .card_hero{
   padding: 12em 0px 0px 0px;
   margin-bottom: 10px;
