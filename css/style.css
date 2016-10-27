@@ -290,14 +290,40 @@ h1 {
   color: #5754AA;
 }
 
-
 .card_skill:hover {
   box-shadow:0 8px 8px rgba(0,0,0,0.24),0 0 8px rgba(0,0,0,0.12);
   background-color:  #5754AA;
   color: #fff;
 }
 
+.flask_circle {
+  fill: #5754AA;
+}
+
+.flask_path {
+  fill: #fff;
+}
+
 .card_skill:hover > i {
+  color: #fff;
+}
+
+.card_skill:hover .flask_circle {
+  fill: #fff;
+}
+
+.card_skill:hover .flask_path {
+  fill: #5754AA;
+}
+
+.express_logo {
+  font-size: 45px !important;
+  font-family: "Open Sans",sans-serif;
+  font-weight: 300;
+  color: #5754AA;
+}
+
+.card_skill:hover .express_logo {
   color: #fff;
 }
 
