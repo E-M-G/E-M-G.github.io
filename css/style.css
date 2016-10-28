@@ -296,35 +296,51 @@ h1 {
   color: #fff;
 }
 
-.flask_circle {
+.flask_icon_circle {
   fill: #5754AA;
 }
 
-.flask_path {
+.flask_icon_path {
   fill: #fff;
 }
 
-.card_skill:hover > i {
-  color: #fff;
-}
-
-.card_skill:hover .flask_circle {
-  fill: #fff;
-}
-
-.card_skill:hover .flask_path {
+.flux_icon {
   fill: #5754AA;
 }
 
-.express_logo {
+.threejs_icon {
+  fill: #5754AA;
+}
+
+.express_icon {
   font-size: 45px !important;
   font-family: "Open Sans",sans-serif;
   font-weight: 300;
   color: #5754AA;
 }
 
-.card_skill:hover .express_logo {
+.card_skill:hover > i {
   color: #fff;
+}
+
+.card_skill:hover .flask_icon_circle {
+  fill: #fff;
+}
+
+.card_skill:hover .flask_icon_path {
+  fill: #5754AA;
+}
+
+.card_skill:hover .express_icon {
+  color: #fff;
+}
+
+.card_skill:hover .flux_icon {
+  fill: #fff;
+}
+
+.card_skill:hover .threejs_icon {
+  fill: #fff;
 }
 
 .card_hero{
