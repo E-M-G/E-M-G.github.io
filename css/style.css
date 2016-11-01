@@ -312,13 +312,7 @@ h1 {
   color: #5754AA;
 }
 
-.card_skill:hover {
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .14),
-              0 1px 18px 0 rgba(0, 0, 0, .2),
-              0 3px 5px -1px rgba(0, 0, 0, .12);
-  background-color:  #5754AA;
-  color: #fff;
-}
+
 
 .flask_icon_circle {
   fill: #5754AA;
@@ -341,6 +335,15 @@ h1 {
   font-family: "Open Sans",sans-serif;
   font-weight: 300;
   color: #5754AA;
+}
+
+/*
+.card_skill:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .14),
+              0 1px 18px 0 rgba(0, 0, 0, .2),
+              0 3px 5px -1px rgba(0, 0, 0, .12);
+  background-color:  #5754AA;
+  color: #fff;
 }
 
 .card_skill:hover > i {
@@ -366,6 +369,7 @@ h1 {
 .card_skill:hover .threejs_icon {
   fill: #fff;
 }
+*/
 
 .card_hero{
   padding: 12em 0px 0px 0px;
