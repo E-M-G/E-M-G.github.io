@@ -203,7 +203,7 @@ h1 {
   height: 325px;
   width: 325px;
   /*background-image: url(file://C:/Users/Eric/Documents/GitHub/ericgossett.github.io/assets/img/atom.svg);*/
-  background-image: url(assets/img/atom.svg);
+  background-image: url(../assets/img/atom.svg);
   background-position: 50% 0;
   background-size: auto, auto 100%;
   background-repeat-y: no-repeat;
