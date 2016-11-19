@@ -76,7 +76,6 @@ h1 {
 .header{
   height: 460px;
   color: #fff;
-  padding-top: 80px;
   text-align: center;
   position: relative;
   z-index: -1;
@@ -116,7 +115,7 @@ h1 {
   margin: 0px;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   color: #AFD0FF;
 }
 
@@ -187,6 +186,46 @@ h1 {
   font-weight: 600;
 }
 
+.hero {
+  position: relative;
+  padding: 50px 0 190px;
+  height: 460px;
+  /* background-image: url(file://C:/Users/Eric/Documents/GitHub/E-M-G.github.io/assets/img/hero.svg); */
+  background-position: 50% 0;
+  background-size: auto, auto 100%;
+  background-repeat-y: no-repeat, repeat;
+}
+
+
+.atom {
+  position: relative;
+  margin-top: 15px;
+  height: 325px;
+  width: 325px;
+  background-image: url(file://C:/Users/Eric/Documents/GitHub/ericgossett.github.io/assets/img/atom.svg);
+  background-position: 50% 0;
+  background-size: auto, auto 100%;
+  background-repeat-y: no-repeat;
+}
+
+.header-profile-image {
+  width: 150px;
+  position: absolute;
+  bottom: 91px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+
+.header-headline-div{
+  height:300px;
+  margin-top: 125px;
+}
+
+
 .content-container{
   margin-top: -60px;
   font-size: 1.5em;
@@ -223,7 +262,6 @@ h1 {
   background: -webkit-linear-gradient(left, #4252B2 0%,#4FB8B4 100%);
   background: linear-gradient(to right, #4252B2 0%,#4FB8B4 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4252B2', endColorstr='#4FB8B4',GradientType=1 );
-
   background: #4252B2;
   background: -moz-linear-gradient(-45deg,  #2B75D4 0%, #5A39A9 100%);
   background: -webkit-linear-gradient(-45deg,  #2B75D4 0%,#5A39A9 100%);
@@ -350,27 +388,21 @@ h1 {
   background-color:  #5754AA;
   color: #fff;
 }
-
 .card_skill:hover > i {
   color: #fff;
 }
-
 .card_skill:hover .flask_icon_circle {
   fill: #fff;
 }
-
 .card_skill:hover .flask_icon_path {
   fill: #5754AA;
 }
-
 .card_skill:hover .express_icon {
   color: #fff;
 }
-
 .card_skill:hover .flux_icon {
   fill: #fff;
 }
-
 .card_skill:hover .threejs_icon {
   fill: #fff;
 }
