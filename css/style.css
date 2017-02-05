@@ -25,6 +25,7 @@ h1 {
   color: #473a87;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
+  margin-bottom: 40px;
 }
 
 .breakline {
@@ -164,7 +165,8 @@ h1 {
 }
 
 .topnav__link:hover {
-  color: #FF88BD;
+  color: #6CC9FA;
+  /* color: #FF88BD; */
 }
 
 .topnav__link > .active {
@@ -175,21 +177,33 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
   color: #fff;
-  background-color: #FF88BD;
   border-radius: 50px;
   border-width: 0px;
   padding: 10px 20px;
+  background-color: #6CC9FA;
+  box-shadow: 0 2px 2px 0 #6CC9FA,
+              0 3px 1px -2px #6CC9FA,
+              0 1px 5px 0 #6CC9FA;
+  /*
+  background-color: #FF88BD;
   box-shadow: 0 2px 2px 0 #FF88BD,
               0 3px 1px -2px #FF88BD,
               0 1px 5px 0 #FF88BD;
+  */
 }
 
 .topnav__button:hover {
   color: #fff;
+  background-color: #83D2FC;
+  box-shadow: 0 2px 2px 0 #83D2FC,
+              0 3px 1px -2px #83D2FC,
+              0 1px 5px 0 #83D2FC;
+  /*
   background-color: #ff93c3;
   box-shadow: 0 2px 2px 0 #ff93c3,
               0 3px 1px -2px #ff93c3,
               0 1px 5px 0 #ff93c3;
+  */
 }
 
 .atom {
