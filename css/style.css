@@ -127,6 +127,7 @@ h1 {
   height: 225px;
   width: 100%;
   display: block;
+  margin-top: -2px;
 }
 
 .bands-svg__background {
