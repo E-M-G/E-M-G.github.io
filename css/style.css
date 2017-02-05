@@ -116,8 +116,10 @@ h1 {
 .hero__subtitle {
   margin: 0px;
   font-size: 18px;
+  /*
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  */
   color: #999EDE;
 }
 
