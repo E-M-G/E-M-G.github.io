@@ -312,9 +312,8 @@ h1 {
 
 
 .card {
-	border:1px solid #eee;
-	transistion:border .5s;
-	border-radius:3px;
+  border: 1px solid hsla(0,0%,45%,.15);
+  border-radius: 3px;
 	margin:5px;
 	background-color:#fff;
 	margin-bottom:28px;
@@ -323,17 +322,20 @@ h1 {
 }
 
 .card:hover {
+  /* cursor: pointer; */
 	box-shadow:0 6px 10px 2px hsla(0,0%,45%,.2);
 	-webkit-transform:translate3d(0,-4px,0);
 	transform:translate3d(0,-4px,0);
 	-webkit-transition:-webkit-transform .3s ease;
 	transition:-webkit-transform .3s ease;
 	transition:transform .3s ease;
-	transition:transform .3s ease,-webkit-transform .3s ease
+	transition:transform .3s ease,-webkit-transform .3s ease;
 }
 
 
 .card_skill {
+  border: 1px solid hsla(0,0%,45%,.15);
+  border-radius: 3px;
 	box-shadow: 0 2px 3px 0 hsla(0,0%,45%,.15);
   transition: box-shadow .5s;
   /*
@@ -456,4 +458,6 @@ h1 {
   position: relative;
   padding: 24px 18px 24px 18px;
   border-bottom: 1px solid #e6e6e6;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
