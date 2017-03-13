@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Eric Gossett">
+    <link rel="icon" href="assets/img/favicon.ico">
+    <title>Eric Gossett</title>
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/cv.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <main id="cv">
+
+      <div class="container cv__body">
+        <header class="cv__header">
+          <span class="cv__title">{{ basics.name }}</span>
+          <p class="cv__subtitle">{{ basics.label }} </p>
+        </header>
+        <hr>
+        <div class="row">
+          <div class="col-md-8">
+            <section id="about">
+              <div class="cv__section-title"> <i class="fa fa-user"></i> About </div>
+              <p>
+                {{ basics.summary }}
+              </p>
+            </section>
+            <section id="work">
+              <div class="cv__section-title"> <i class="fa fa-suitcase"></i> Work Experience</div>
+              <p>
+                {{ basics.summary }}
+              </p>
+            </section>
+          </div>
+          <div class="col-md-4">
+            <section id="contact">
+              <div class="cv__section-title"> <i class="fa fa-bullseye"></i> Contact </div>
+                <div class="cv__contact-item">
+                  <div class="cv__contact-icon">
+                    <span class="fa fa-map-marker fa-fw"></span>
+                  </div>
+                  <div class="cv__contact-text">
+                    {{ basics.location.city }}, {{ basics.location.region}}
+                  </div>
+                </div>
+                <div class="cv__contact-item">
+                  <div class="cv__contact-icon">
+                    <span class="fa fa-envelope fa-fw"></span>
+                  </div>
+                  <div class="cv__contact-text">
+                    {{ basics.email }}
+                  </div>
+                </div>
+                <div class="cv__contact-item">
+                  <div class="cv__contact-icon">
+                    <span class="fa fa-phone fa-fw"></span>
+                  </div>
+                  <div class="cv__contact-text">
+                    {{ basics.phone }}
+                  </div>
+                </div>
+                <div class="cv__contact-item">
+                  <div class="cv__contact-icon">
+                    <span class="fa fa-globe fa-fw"></span>
+                  </div>
+                  <div class="cv__contact-text">
+                    {{ basics.website }}
+                  </div>
+                </div>
+                <div class="cv__contact-item" v-for="profile in basics.profiles">
+                  <div class="cv__contact-icon">
+                    <span v-if="profile.network === 'Twitter'" class="fa fa-twitter fa-fw"></span>
+                    <span v-if="profile.network === 'GitHub'" class="fa fa-github fa-fw"></span>
+                  </div>
+                  <div class="cv__contact-text">
+                    {{ profile.username }}
+                  </div>
+                </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="js/cv.js"></script>
+</html>
