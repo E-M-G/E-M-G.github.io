@@ -4,7 +4,7 @@ var cv = {
     "label": "Graduate Student",
     "picture": "",
     "email": "ericmgossett@gmail.com",
-    "phone": "(203) 907-6010",
+    "phone": "(XXX) XXX-XXXX",
     "website": "http://ericgossett.com",
     "summary": "Sint accumsan officiis est ex. Viderer accusamus sadipscing nec te, in nec ubique ocurreret suscipiantur. Vim solet alienum patrioque te. Amet primis mediocritatem pri ne. Ad cibo clita pertinax qui, sonet essent ea eum. Ex qui audire noluisse, ad aliquip consequuntur quo, ex has graeci noster volumus.",
     "location": {
