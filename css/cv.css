@@ -88,7 +88,7 @@ section {
   padding: 5px 0px;
 }
 
-.cv__work__location {
+.cv__education__item, .cv__work__location {
   background: #eee;
   padding: 10px;
   border-right: 1px solid #ccc;
@@ -101,7 +101,7 @@ section {
   font-size: 1.4em;
 }
 
-.cv__work__subtitle {
+.cv__publication__subtitle, .cv__work__subtitle {
   color: #473A87;
   font-weight: 400;
   font-size: 1.1em;
@@ -133,6 +133,62 @@ section {
 }
 
 
-.cv__education {
+.cv__education__title {
+  color: #473A87;
+  font-weight: 400;
+  font-size: 1.1em;
+}
 
+.cv__education__subtitle {
+
+}
+
+.cv__publication__item {
+  margin-left: 20px;
+  padding: 10px;
+  border-bottom: 1px #eee solid;
+}
+
+.cv__publication__item__summary{
+}
+
+.cv__skill__item {
+  padding: 10px;
+  margin-bottom: 10px;
+  clear: both;
+
+}
+
+.cv__skill__name {
+  margin-right: 10px;
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+.cv__skill__level {
+  background-color:  #473A87;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+
+
+.cv__skill__keywords {
+  padding: 5px 0px;
+  margin: 10px 0px;
+}
+
+
+.cv__skill__keywords__item {
+  float: left;
+  color: white;
+  font-size: 0.8em;
+  border: 1px  #473A87 solid;
+  color: #473A87;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: 400;
+  margin: 5px;
 }

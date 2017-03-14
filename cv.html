@@ -38,7 +38,7 @@
                     {{ w.company }}
                   </div>
                   <div v-if="w.website !== null">
-                    <a href="{{ w.website }}">
+                    <a v-bind:href="w.website">
                       <i class="fa fa-globe fa-fw"></i>
                       {{ w.website }}
                     </a>
@@ -67,6 +67,12 @@
             </section>
             <section id="publications">
               <div class="cv__section-title"> <i class="fa fa-book"></i> Publications </div>
+              <div class="cv__publication__item" v-for="pub in publications">
+                <span class="cv__publication__subtitle"> {{ pub.name }} </span>
+                <span> {{ pub.publisher }} </span>
+                <span> {{ pub.releaseDate }} </span>
+                <div class="cv__publication__item__summary"> {{ pub.summary }} </span>
+              </div>
             </section>
           </div>
           <div class="col-md-4">
@@ -116,7 +122,29 @@
             </section>
             <section id="education">
               <div class="cv__section-title"> <i class="fa fa-university"></i> Education </div>
+              <div class="cv__education__item" v-for="edu in education">
+                <div class="cv__education__title">
+                  {{ edu.institution }}
+                </div>
+                <div class="cv__education__subtitle">
+                  <i class="fa fa-graduation-cap"></i> {{ edu.studyType }}
+                </div>
+                <div> {{ edu.area }} </div>
+                <div> GPA: {{ edu.gpa }} </div>
+              </div>
             </section>
+            <section id="skills">
+              <div class="cv__section-title"> <i class="fa fa-tasks"></i> Skills </div>
+              <div class="cv__skill__item" v-for="skill in skills">
+                <span class="cv__skill__name"> {{ skill.name }} </span>
+                <span class="cv__skill__level"> {{ skill.level }} </span>
+                <div class="cv__skill__keywords">
+                  <div class="cv__skill__keywords__item" v-for="key in skill.keywords">
+                    {{ key }}
+                  </div>
+                </div>
+              </div>
+            </sections>
           </div>
         </div>
       </div>

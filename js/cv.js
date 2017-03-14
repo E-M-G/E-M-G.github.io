@@ -80,22 +80,48 @@ var cv = {
     "awarder": "Company",
     "summary": "There is no spoon."
   }],
-  "publications": [{
+  "publications": [
+    {
     "name": "Publication",
-    "publisher": "Company",
+    "publisher": "publisher",
     "releaseDate": "2014-10-01",
     "website": "http://publication.com",
     "summary": "Description..."
-  }],
-  "skills": [{
-    "name": "Web Development",
-    "level": "Master",
-    "keywords": [
-      "HTML",
-      "CSS",
-      "Javascript"
-    ]
-  }],
+  },
+    {
+    "name": "Publication",
+    "publisher": "publisher",
+    "releaseDate": "2014-10-01",
+    "website": "http://publication.com",
+    "summary": "Description..."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Materials Science",
+      "level": "Intermediate",
+      "keywords": [
+        "DFT",
+        "AFLOW",
+        "High-throughput",
+        "Metallic glasses",
+        "Machine learning",
+      ]
+    },
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "React",
+        "Redux",
+        "Django",
+        "Flask",
+      ]
+    }
+  ],
   "languages": [{
     "name": "English",
     "level": "Native speaker"
