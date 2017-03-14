@@ -16,7 +16,6 @@
   </head>
   <body>
     <main id="cv">
-
       <div class="container cv__body">
         <header class="cv__header">
           <span class="cv__title">{{ basics.name }}</span>
@@ -33,9 +32,41 @@
             </section>
             <section id="work">
               <div class="cv__section-title"> <i class="fa fa-suitcase"></i> Work Experience</div>
-              <p>
-                {{ basics.summary }}
-              </p>
+              <div v-for="w in work" class="cv__work">
+                <div class="cv__work__location">
+                  <div class="cv__work__title">
+                    {{ w.company }}
+                  </div>
+                  <div v-if="w.website !== null">
+                    <a href="{{ w.website }}">
+                      <i class="fa fa-globe fa-fw"></i>
+                      {{ w.website }}
+                    </a>
+                  </div>
+                  <div class="cv__work__location__dates">
+                    {{ w.startDate }} - {{ w.endDate }}
+                  </div>
+                </div>
+                <div class="cv__work__details">
+                  <div class="cv__work__title">
+                    {{ w.position }}
+                  </div>
+                  <div style="padding-bottom: 10px;">
+                    {{ w.summary }}
+                  </div>
+                  <div class="cv__work__subtitle">
+                    Highlights
+                  </div>
+                  <div class="cv__work__highlights">
+                    <div v-for="h in w.highlights" class="cv__work__highlights__item">
+                      {{ h }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="publications">
+              <div class="cv__section-title"> <i class="fa fa-book"></i> Publications </div>
             </section>
           </div>
           <div class="col-md-4">
@@ -82,6 +113,9 @@
                     {{ profile.username }}
                   </div>
                 </div>
+            </section>
+            <section id="education">
+              <div class="cv__section-title"> <i class="fa fa-university"></i> Education </div>
             </section>
           </div>
         </div>
