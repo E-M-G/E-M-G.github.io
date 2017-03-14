@@ -53,10 +53,10 @@ var cv = {
   "education": [
     {
       "institution": "Duke University",
-      "area": "Computational Materials Science",
+      "area": "Materials Science",
       "studyType": "PhD",
-      "startDate": "2015-09-01",
-      "endDate": "Present",
+      "startDate": "2015",
+      "endDate": "Now",
       "gpa": "3.9X",
       "courses": [
         "DB1101 - Basic SQL"
@@ -66,8 +66,8 @@ var cv = {
       "institution": "Southern Connecticut State University",
       "area": "Physics",
       "studyType": "Bachelor",
-      "startDate": "2010-09-01",
-      "endDate": "2014-12-19",
+      "startDate": "2010",
+      "endDate": "2014",
       "gpa": "3.8X",
       "courses": [
         "DB1101 - Basic SQL"
@@ -101,9 +101,7 @@ var cv = {
       "name": "Materials Science",
       "level": "Intermediate",
       "keywords": [
-        "DFT",
-        "AFLOW",
-        "High-throughput",
+        "Derivative structures",
         "Metallic glasses",
         "Machine learning",
       ]
