@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="Eric Gossett">
     <link rel="icon" href="assets/img/favicon.ico">
@@ -12,14 +11,13 @@
     <link href="css/bootstrap-grid.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/cv.css" rel="stylesheet">
-    <script src="https://unpkg.com/vue"></script>
   </head>
   <body>
     <main id="cv">
       <div class="container cv__body">
         <header class="cv__header">
-          <span class="cv__title">{{ basics.name }}</span>
-          <p class="cv__subtitle">{{ basics.label }} </p>
+          <span class="cv__title">Eric Gossett</span>
+          <p class="cv__subtitle">Graduate Student </p>
         </header>
         <hr>
         <div class="row">
@@ -27,53 +25,70 @@
             <section id="about">
               <div class="cv__section-title"> <i class="fa fa-user"></i> About </div>
               <p>
-                {{ basics.summary }}
+                Sint accumsan officiis est ex. Viderer accusamus sadipscing nec te, in nec ubique ocurreret suscipiantur. Vim solet alienum patrioque te. Amet primis mediocritatem pri ne. Ad cibo clita pertinax qui, sonet essent ea eum. Ex qui audire noluisse, ad aliquip consequuntur quo, ex has graeci noster volumus.
               </p>
             </section>
             <section id="work">
               <div class="cv__section-title"> <i class="fa fa-suitcase"></i> Work Experience</div>
-              <div v-for="w in work" class="cv__work">
+              
+              <div class="cv__work">
                 <div class="cv__work__location">
                   <div class="cv__work__title">
-                    {{ w.company }}
+                    Company
                   </div>
-                  <div v-if="w.website !== null">
-                    <a v-bind:href="w.website">
+                  
+                    <a href="http://company.com">
                       <i class="fa fa-globe fa-fw"></i>
-                      {{ w.website }}
+                      http://company.com
                     </a>
-                  </div>
+                  
                   <div class="cv__work__location__dates">
-                    {{ w.startDate }} - {{ w.endDate }}
+                    2013-01-01 - 2014-01-01
                   </div>
                 </div>
                 <div class="cv__work__details">
                   <div class="cv__work__title">
-                    {{ w.position }}
+                    President
                   </div>
                   <div style="padding-bottom: 10px;">
-                    {{ w.summary }}
+                    Sint accumsan officiis est ex. Viderer accusamus sadipscing nec te, in nec ubique ocurreret suscipiantur. Vim solet alienum patrioque te. Amet primis mediocritatem pri ne. Ad cibo clita pertinax qui, sonet essent ea eum. Ex qui audire noluisse, ad aliquip consequuntur quo, ex has graeci noster volumus.
                   </div>
                   <div class="cv__work__subtitle">
                     Highlights
                   </div>
                   <div class="cv__work__highlights">
-                    <div v-for="h in w.highlights" class="cv__work__highlights__item">
-                      {{ h }}
+                    
+                    <div class="cv__work__highlights__item">
+                      Started the company
                     </div>
+                    
+                    <div class="cv__work__highlights__item">
+                      did some more stuff
+                    </div>
+                    
                   </div>
                 </div>
               </div>
+              
             </section>
             <section id="publications">
               <div class="cv__section-title"> <i class="fa fa-book"></i> Publications </div>
-              <div class="cv__publication__item" v-for="pub in publications">
-                <span class="cv__publication__subtitle"> {{ pub.name }} </span>
-                <span> {{ pub.publisher }} </span>
-                <span> {{ pub.releaseDate }} </span>
-                <div class="cv__publication__item__summary"> {{ pub.summary }} </span>
+              
+              <div class="cv__publication__item">
+                <span class="cv__publication__subtitle"> Publication </span>
+                <span> publisher </span>
+                <span> 2014-10-01 </span>
+                <span class="cv__publication__item__summary"> Description... </span>
               </div>
-            </section>
+              
+              <div class="cv__publication__item">
+                <span class="cv__publication__subtitle"> Publication </span>
+                <span> publisher </span>
+                <span> 2014-10-01 </span>
+                <span class="cv__publication__item__summary"> Description... </span>
+              </div>
+              
+          </section>
           </div>
           <div class="col-md-4">
             <section id="contact">
@@ -83,7 +98,7 @@
                     <span class="fa fa-map-marker fa-fw"></span>
                   </div>
                   <div class="cv__contact-text">
-                    {{ basics.location.city }}, {{ basics.location.region}}
+                    Durham, North Carolina
                   </div>
                 </div>
                 <div class="cv__contact-item">
@@ -91,7 +106,7 @@
                     <span class="fa fa-envelope fa-fw"></span>
                   </div>
                   <div class="cv__contact-text">
-                    {{ basics.email }}
+                    example@example.com
                   </div>
                 </div>
                 <div class="cv__contact-item">
@@ -99,7 +114,7 @@
                     <span class="fa fa-phone fa-fw"></span>
                   </div>
                   <div class="cv__contact-text">
-                    {{ basics.phone }}
+                    (XXX) XXX-XXXX
                   </div>
                 </div>
                 <div class="cv__contact-item">
@@ -107,49 +122,102 @@
                     <span class="fa fa-globe fa-fw"></span>
                   </div>
                   <div class="cv__contact-text">
-                    {{ basics.website }}
+                    http://ericgossett.com
                   </div>
                 </div>
-                <div class="cv__contact-item" v-for="profile in basics.profiles">
+                
+                <div class="cv__contact-item">
                   <div class="cv__contact-icon">
-                    <span v-if="profile.network === 'Twitter'" class="fa fa-twitter fa-fw"></span>
-                    <span v-if="profile.network === 'GitHub'" class="fa fa-github fa-fw"></span>
+                    
+                    <span class="fa fa-twitter fa-fw"></span>
+                    
+                    
                   </div>
                   <div class="cv__contact-text">
-                    {{ profile.username }}
+                    __egoss__
                   </div>
                 </div>
+                
+                <div class="cv__contact-item">
+                  <div class="cv__contact-icon">
+                    
+                    
+                    <span class="fa fa-github fa-fw"></span>
+                    
+                  </div>
+                  <div class="cv__contact-text">
+                    ericgossett
+                  </div>
+                </div>
+                
             </section>
             <section id="education">
               <div class="cv__section-title"> <i class="fa fa-university"></i> Education </div>
-              <div class="cv__education__item" v-for="edu in education">
-                <div class="cv__education__title">
-                  {{ edu.institution }}
-                </div>
-                <div class="cv__education__subtitle">
-                  <i class="fa fa-graduation-cap"></i> {{ edu.studyType }}
-                  <span style="float:right;"> {{ edu.startDate }} - {{ edu.endDate }}</span>
-                </div>
-                <div> {{ edu.area }} </div>
-                <div> GPA: {{ edu.gpa }} </div>
-              </div>
+              
             </section>
             <section id="skills">
               <div class="cv__section-title"> <i class="fa fa-tasks"></i> Skills </div>
-              <div class="cv__skill__item" v-for="skill in skills">
-                <span class="cv__skill__name"> {{ skill.name }} </span>
-                <span class="cv__skill__level"> {{ skill.level }} </span>
+              
+              <div class="cv__skill__item">
+                <span class="cv__skill__name"> Materials Science </span>
+                <span class="cv__skill__level"> Intermediate </span>
                 <div class="cv__skill__keywords">
-                  <div class="cv__skill__keywords__item" v-for="key in skill.keywords">
-                    {{ key }}
+                  
+                  <div class="cv__skill__keywords__item">
+                    Derivative structures
                   </div>
+                  
+                  <div class="cv__skill__keywords__item">
+                    Metallic glasses
+                  </div>
+                  
+                  <div class="cv__skill__keywords__item">
+                    Machine learning
+                  </div>
+                  
                 </div>
               </div>
-            </sections>
+              
+              <div class="cv__skill__item">
+                <span class="cv__skill__name"> Web Development </span>
+                <span class="cv__skill__level"> Master </span>
+                <div class="cv__skill__keywords">
+                  
+                  <div class="cv__skill__keywords__item">
+                    HTML
+                  </div>
+                  
+                  <div class="cv__skill__keywords__item">
+                    CSS
+                  </div>
+                  
+                  <div class="cv__skill__keywords__item">
+                    Javascript
+                  </div>
+                  
+                  <div class="cv__skill__keywords__item">
+                    React
+                  </div>
+                  
+                  <div class="cv__skill__keywords__item">
+                    Redux
+                  </div>
+                  
+                  <div class="cv__skill__keywords__item">
+                    Django
+                  </div>
+                  
+                  <div class="cv__skill__keywords__item">
+                    Flask
+                  </div>
+                  
+                </div>
+              </div>
+              
+            </section>
           </div>
         </div>
       </div>
     </main>
   </body>
-  <script src="js/cv.js"></script>
 </html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Eric Gossett">
+    <link rel="icon" href="assets/img/favicon.ico">
+    <title>Eric Gossett</title>
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/cv.css" rel="stylesheet">
+  </head>
+  <body>
+    <main id="cv">
+      <div class="container cv__body">
+        <header class="cv__header">
+          <span class="cv__title">{{ basics.name }}</span>
+          <p class="cv__subtitle">{{ basics.label }} </p>
+        </header>
+        <hr>
+        <div class="row">
+          <div class="col-md-8">
+            <section id="about">
+              <div class="cv__section-title"> <i class="fa fa-user"></i> About </div>
+              <p>
+                {{ basics.summary }}
+              </p>
+            </section>
+            <section id="work">
+              <div class="cv__section-title"> <i class="fa fa-suitcase"></i> Work Experience</div>
+              {% for w in work %}
+              <div class="cv__work">
+                <div class="cv__work__location">
+                  <div class="cv__work__title">
+                    {{ w.company }}
+                  </div>
+                  {% if w.website != None %}
+                    <a href="{{w.website}}">
+                      <i class="fa fa-globe fa-fw"></i>
+                      {{ w.website }}
+                    </a>
+                  {% endif %}
+                  <div class="cv__work__location__dates">
+                    {{ w.startDate }} - {{ w.endDate }}
+                  </div>
+                </div>
+                <div class="cv__work__details">
+                  <div class="cv__work__title">
+                    {{ w.position }}
+                  </div>
+                  <div style="padding-bottom: 10px;">
+                    {{ w.summary }}
+                  </div>
+                  <div class="cv__work__subtitle">
+                    Highlights
+                  </div>
+                  <div class="cv__work__highlights">
+                    {% for h in w.highlights%}
+                    <div class="cv__work__highlights__item">
+                      {{ h }}
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </section>
+            <section id="publications">
+              <div class="cv__section-title"> <i class="fa fa-book"></i> Publications </div>
+              {% for pub in publications %}
+              <div class="cv__publication__item">
+                <span class="cv__publication__subtitle"> {{ pub.name }} </span>
+                <span> {{ pub.publisher }} </span>
+                <span> {{ pub.releaseDate }} </span>
+                <span class="cv__publication__item__summary"> {{ pub.summary }} </span>
+              </div>
+              {% endfor %}
+          </section>
+          </div>
+          <div class="col-md-4">
+            <section id="contact">
+              <div class="cv__section-title"> <i class="fa fa-bullseye"></i> Contact </div>
+                <div class="cv__contact-item">
+                  <div class="cv__contact-icon">
+                    <span class="fa fa-map-marker fa-fw"></span>
+                  </div>
+                  <div class="cv__contact-text">
+                    {{ basics.location.city }}, {{ basics.location.region}}
+                  </div>
+                </div>
+                <div class="cv__contact-item">
+                  <div class="cv__contact-icon">
+                    <span class="fa fa-envelope fa-fw"></span>
+                  </div>
+                  <div class="cv__contact-text">
+                    {{ basics.email }}
+                  </div>
+                </div>
+                <div class="cv__contact-item">
+                  <div class="cv__contact-icon">
+                    <span class="fa fa-phone fa-fw"></span>
+                  </div>
+                  <div class="cv__contact-text">
+                    {{ basics.phone }}
+                  </div>
+                </div>
+                <div class="cv__contact-item">
+                  <div class="cv__contact-icon">
+                    <span class="fa fa-globe fa-fw"></span>
+                  </div>
+                  <div class="cv__contact-text">
+                    {{ basics.website }}
+                  </div>
+                </div>
+                {% for profile in basics.profiles %}
+                <div class="cv__contact-item">
+                  <div class="cv__contact-icon">
+                    {% if profile.network == 'Twitter' %}
+                    <span class="fa fa-twitter fa-fw"></span>
+                    {% endif %}
+                    {% if profile.network == 'GitHub' %}
+                    <span class="fa fa-github fa-fw"></span>
+                    {% endif %}
+                  </div>
+                  <div class="cv__contact-text">
+                    {{ profile.username }}
+                  </div>
+                </div>
+                {% endfor %}
+            </section>
+            <section id="education">
+              <div class="cv__section-title"> <i class="fa fa-university"></i> Education </div>
+              {% for edu in eduication %}
+              <div class="cv__education__item">
+                <div class="cv__education__title">
+                  {{ edu.institution }}
+                </div>
+                <div class="cv__education__subtitle">
+                  <i class="fa fa-graduation-cap"></i> {{ edu.studyType }}
+                  <span style="float:right;"> {{ edu.startDate }} - {{ edu.endDate }}</span>
+                </div>
+                <div> {{ edu.area }} </div>
+                <div> GPA: {{ edu.gpa }} </div>
+              </div>
+              {% endfor %}
+            </section>
+            <section id="skills">
+              <div class="cv__section-title"> <i class="fa fa-tasks"></i> Skills </div>
+              {% for skill in skills %}
+              <div class="cv__skill__item">
+                <span class="cv__skill__name"> {{ skill.name }} </span>
+                <span class="cv__skill__level"> {{ skill.level }} </span>
+                <div class="cv__skill__keywords">
+                  {% for key in skill.keywords %}
+                  <div class="cv__skill__keywords__item">
+                    {{ key }}
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              {% endfor %}
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
